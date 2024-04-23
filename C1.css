@@ -1,0 +1,197 @@
+.root{
+    background-color: black;
+}
+
+
+.navbar{
+    font-family:'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size:large;
+    font-weight: 100;
+    font-optical-sizing:  auto;
+    padding: 10px;
+    margin: 10px;
+    color: #e91804;
+}
+.clip{
+    height: auto;
+    width: 100%;
+}
+
+
+ul a:hover {color: #333;}
+
+.scroll-container{
+    background: none;
+}
+
+div.scroll-container {
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+  div.scroll-container img {
+    padding: 10px;
+    width: 25%;
+  }
+
+ .carousel-watch img:hover{
+    opacity: 0.7;
+ }
+
+.logo {
+    height: 40px;
+    width: 40px;
+    transition: .4s;
+}
+
+.logo:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.video{
+    border-bottom: rgba(255, 255, 255, 0) 3px outset;
+    margin: 0%;
+}
+
+.videowords{
+    position: absolute; 
+    top: 50%; 
+    left: 10%;
+    height: 40%; 
+    width: 25%; 
+    color: white;
+}
+
+.imagewords{
+    margin: 5%;
+    color: white;
+}
+
+.wrapper{
+    display: flex;
+    overflow-x: auto;
+    background-color: transparent;
+}
+
+.wrapper::-webkit-scrollbar{
+    display: none;
+}
+
+.wrapper .carousel-watch{
+    min-width: 30%;
+    text-align: center;
+}
+
+.carousel-watch{
+    margin: 3%;
+}
+
+.watch img{
+    padding: 5%;
+}
+
+.watch-gallery img{
+    margin: 10px;
+    transition-duration: 1s;
+
+}
+
+.watch-gallery img:hover{
+    transform: scale(1.3);
+}
+
+#watchdetails{
+    padding: 5%;
+}
+.footer{
+    padding: 5%;
+    background-color: gray;
+}
+
+.footer3{
+    margin-top:  5%;
+    margin-bottom: 5%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  *:focus {
+    outline: 0;
+  }
+  
+  html {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  body {
+      background-color: #000000;
+  }
+  
+  .carousel {
+      height: 700px;
+      perspective: 600px;
+      transform: translateY(-100px);
+  }
+  
+  .carousel .carousel-item {
+      cursor: grab;
+      width: 400px;
+  }
+  
+  .carousel .carousel-item:active {
+      cursor: grabbing;
+  }
+  
+  .carousel .carousel-item img {
+      width: 100%;
+  }
+  
+  .carousel .carousel-item h3 {
+      background-color: #ffffff;
+      color: #000000;
+      font-size: 2em;
+      font-weight: bold;
+      margin: -5px 0 0;
+      padding: 10px 5px;
+      text-align: center;
+  }
+
+  img{
+    height: auto;
+    width: 100%;
+  }
+
+@media (max-width:992px) and (min-width:768px){
+    .videowords h1{
+        font-size: x-large;
+    }
+    .videowords p{
+        font-size: smaller;
+    }
+}
+
+@media (max-width:768px) and (min-width:576px){
+    .videowords h1{
+        font-size: large;
+    }
+    .videowords p{
+        font-size: x-small;
+    }
+}
+
+@media (max-width:576px){
+    .videowords h1{
+        font-size: small;
+    }
+    .videowords p{
+        font-size: xx-small;
+    }
+}
